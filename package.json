@@ -1,6 +1,6 @@
 {
   "name": "@lissettebm/ui-example",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ejemplo de un paquete de componentes React",
   "author": "Lissette Bustos",
   "license": "MIT",
@@ -12,7 +12,8 @@
     "node": ">=10"
   },
   "scripts": {
-    "build": "microbundle-crl --no-compress --format modern,cjs",
+    "scss": "cd dist && \\cp -R ../src/assets/scss/ scss",
+    "build": "microbundle-crl --no-compress --format modern,cjs && yarn scss",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "prepare": "run-s build",
     "test": "run-s test:unit test:lint test:build",
@@ -63,6 +64,7 @@
   "dependencies": {
     "@types/reactstrap": "8.5.2",
     "bootstrap": "4.5.3",
+    "node-sass": "4.14.1",
     "reactstrap": "8.6.0"
   }
 }
