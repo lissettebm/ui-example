@@ -1,0 +1,14 @@
+// The initial underscore on some files (as _custom.scss) lets know that the file
+// is only a partial file and that it should not be generated into a CSS file
+// (https://sass-lang.com/guide)
+
+// Files to override bootstrap variables
+// https://getbootstrap.com/docs/4.5/getting-started/theming/?#variable-defaults
+@import 'variables';
+
+// Bootstrap file
+@import 'bootstrap/scss/bootstrap';
+
+// Files to create new classes or override part of bootstrap classes
+@import 'custom';
+@import 'custom_button';

@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Button from './components/Button'
+import Button, { ButtonProps } from './components/Button'
 
-export { Button }
+export { Button, ButtonProps }

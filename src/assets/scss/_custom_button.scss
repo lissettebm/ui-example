@@ -1,0 +1,55 @@
+// styles for CustomButton component
+.custom-button {
+  border-radius: 0.3rem;
+  width: 100%;
+  min-height: 65px;
+
+  .spin {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  span {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  &.btn.btn-primary {
+    &:hover {
+      box-shadow: 0px 0px 20px lighten($color: $primary, $amount: 45%);
+      background-color: $primary;
+      border-color: transparent;
+    }
+  }
+  &.btn-dark.btn-block {
+    &.disabled {
+      opacity: 1;
+      background-color: $color-medium;
+    }
+  }
+
+  &.btn-outline-secondary:hover {
+    color: #f4f4f4;
+  }
+
+  &.btn.btn-primary,
+  &.btn.btn-block {
+    .icon-btn {
+      path {
+        fill: $primary;
+      }
+    }
+    &:hover {
+      path {
+        fill: #f4f4f4;
+      }
+    }
+  }
+}
+
+.btn-sm {
+  min-height: 38px;
+  .spin {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+}
