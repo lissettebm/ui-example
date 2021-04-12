@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '@lissettebm/ui-example'
+import { Button, Icon } from '@lissettebm/ui-example'
 // Lo importo desde src porque este paquete es para probar
 // y solo se actualiza el dist al hacer build
 // no con start porque tiene un watch que no actualiza la carpeta scss en el dist
@@ -17,14 +17,9 @@ const App = () => {
       <h4>Buttons</h4>
       <div className='row'>
         <div className='col-sm-6 col-md-4'>
-          <Button
-            text='Ingresar'
-            colorType='primary'
-            type='button'
-            onClick={() => {}}
-            size='lg'
-          />
+          <Button text='Ingresar' colorType='primary' onClick={() => {}} />
         </div>
+        <Icon iconName='alert' color='primary' size={undefined} />
       </div>
     </div>
   )
