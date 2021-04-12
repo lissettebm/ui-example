@@ -7,7 +7,7 @@
 @import 'variables';
 
 // Bootstrap file
-@import 'bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap/scss/bootstrap';
 
 // Files to create new classes or override part of bootstrap classes
 @import 'custom';
