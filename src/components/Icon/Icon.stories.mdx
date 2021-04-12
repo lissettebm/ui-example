@@ -1,0 +1,64 @@
+import {
+  ArgsTable,
+  Meta,
+  Preview,
+  Story,
+  Canvas
+} from '@storybook/addon-docs/blocks'
+import Icon, { CustomIcons } from './index'
+
+<Meta
+  title='Components/Icon'
+  component={Icon}
+  argTypes={{
+    color: { control: 'select' },
+    iconName: { control: 'select' },
+    size: { control: 'select' }
+  }}
+/>
+
+<!--- This is your Story template function, shown here in React -->
+
+export const Template = (args) => <Icon {...args} />
+
+# Icon
+
+Componente para utilizar los personalizados iconos disponibles
+
+<Preview>
+  <Story
+    name='Primary'
+    args={{
+      iconName: 'alert'
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Preview>
+
+<ArgsTable
+  of={Icon}
+  argTypes={{
+    color: { control: 'select' },
+    iconName: { control: 'select' },
+    size: { control: 'select' }
+  }}
+  story='Primary'
+/>
+
+## Iconos disponibles
+
+Se muestran todos los opciones disponibles para el prop `iconName`
+
+<Canvas withSource='none'>
+  <div className='row row-cols-3 row-cols-md-6'>
+    {Object.keys(CustomIcons).map((key, i) => {
+      return (
+        <div key={`${key}_${i}`} className='col text-center pt-2'>
+          <Icon iconName={key} />
+          <p>{key}</p>
+        </div>
+      )
+    })}
+  </div>
+</Canvas>
