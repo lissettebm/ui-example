@@ -54,5 +54,5 @@ WithIcon.args = {
   text: 'Ingresar',
   onClick: () => {},
   disabled: true,
-  icon: <Icon iconName='circle' />
+  icon: <Icon iconName='circle' color='white' />
 }
