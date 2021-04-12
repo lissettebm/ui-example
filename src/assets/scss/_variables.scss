@@ -1,16 +1,16 @@
 // File to override bootstrap variables
 // https://getbootstrap.com/docs/4.5/getting-started/theming/?#variable-defaults
-$body-bg: #f0f0f0;
-$body-color: #838383;
+$body-bg: #f0f0f0 !default;
+$body-color: #838383 !default;
 
 // colores genéricos de Global 3000
-$primary: #00af9a;
-$secondary: #7dd5ca;
-$tertiary: #def2f0;
+$primary: #00af9a !default;
+$secondary: #7dd5ca !default;
+$tertiary: #def2f0 !default;
 
-$red: #af2d2d;
-$green: #41b567;
+$red: #af2d2d !default;
+$green: #41b567 !default;
 
-$color-dark: #1e1e1e; // para texto input activo y tabla
-$color-medium: #5a5a5a; // para títulos
-$color-light: #838383; // textos de cuerpo, bajada, parrafos
+$color-dark: #1e1e1e !default; // para texto input activo y tabla
+$color-medium: #5a5a5a !default; // para títulos
+$color-light: #838383 !default; // textos de cuerpo, bajada, parrafos
