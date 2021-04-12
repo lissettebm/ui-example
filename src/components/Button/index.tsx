@@ -56,7 +56,7 @@ const Button = ({
       style={{ width: fullwidth ? '100%' : '' }}
     >
       {loading ? (
-        <Icon className='spin fs-2' iconName='circle' />
+        <Icon className='spin fs-2' iconName='circle' color='white' />
       ) : (
         <div className='d-flex align-items-center justify-content-center'>
           {icon && <div className='pr-2 icon-btn'>{icon}</div>}
